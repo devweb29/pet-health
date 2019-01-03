@@ -22,7 +22,7 @@
         <li><a href="#"><i class="fa fa-book"></i> <span>Appointment Requests</span></a></li>
         <li><a href="#"><i class="fa fa-book"></i> <span>Medical History/Reports</span></a></li>
         <li><a href="#"><i class="fa fa-book"></i> <span>Notifications</span></a></li>
-        <li><a href="#"><i class="fa fa-book"></i> <span>Services</span></a></li>
+        <li><a href="{{url('admin/services')}}"><i class="fa fa-book"></i> <span>Services</span></a></li>
         <li class="header">Settings</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Accounts</span></a></li>
       </ul>

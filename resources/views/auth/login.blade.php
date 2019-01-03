@@ -55,12 +55,12 @@
               </div>
             </div>
           </form>
-          @if (Route::has('password.request'))
+          {{-- @if (Route::has('password.request'))
             <a class="text-center" href="{{ route('password.request') }}">
                 {{ __('Forgot Your Password?') }}
             </a><br>
-          @endif
-          <a href="{{url('register')}}" class="text-center">Register a new membership</a>
+          @endif --}}
+          {{-- <a href="{{url('register')}}" class="text-center">Register a new membership</a> --}}
         </div>
 </div>
 @endsection

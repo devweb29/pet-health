@@ -13,7 +13,7 @@ class AdminController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('isAdmin');
+
     }
 
     /**
@@ -34,6 +34,10 @@ class AdminController extends Controller
     public function petList()
     {
         return view('admin.pages.pets');
+    }
+
+    public function serviceList(){
+        return view('admin.pages.services');
     }
 
 }

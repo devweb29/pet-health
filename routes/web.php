@@ -20,4 +20,6 @@ Route::get('/admin/owners', 'AdminController@ownerList');
 
 Route::get('/admin/pets', 'AdminController@petList');
 
+Route::get('/admin/services', 'AdminController@serviceList');
+
 Auth::routes();
