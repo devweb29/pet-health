@@ -25,4 +25,15 @@ class AdminController extends Controller
     {
         return view('admin.pages.dashboard');
     }
+
+    public function ownerList()
+    {
+        return view('admin.pages.owners');
+    }
+
+    public function petList()
+    {
+        return view('admin.pages.pets');
+    }
+
 }

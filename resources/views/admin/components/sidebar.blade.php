@@ -11,38 +11,20 @@
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-      <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview menu-open">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>CMS</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-          </ul>
-        </li>
-        <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li><a href="{{url('admin/dashboard')}}"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
+        <li><a href="{{url('admin/owners')}}"><i class="fa fa-book"></i> <span>Pet Owners Information</span></a></li>
+        <li><a href="{{url('admin/pets')}}"><i class="fa fa-book"></i> <span>Pet Information</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Doctors Schedule</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Appointment Requests</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Medical History/Reports</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Notifications</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Services</span></a></li>
+        <li class="header">Settings</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Accounts</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
