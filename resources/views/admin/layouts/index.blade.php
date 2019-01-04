@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{url('vendor/node_modules/bootstrap/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{url('vendor/node_modules/datatables/dataTables.bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{url('vendor/node_modules/template/app.css')}}">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{url('vendor/node_modules/template/skin-red-light.css')}}">
 <style>
     .error{
