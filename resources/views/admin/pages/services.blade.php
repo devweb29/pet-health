@@ -1,7 +1,11 @@
 @extends('admin.layouts.index')
 
 @push('styles')
-
+  <style>
+      .btn-social-icon.btn-xs {
+        margin-left: 5px !important;
+      }
+  </style>
 @endpush
 
 @push('scripts')
@@ -23,21 +27,26 @@
             var dataSet = [
                 snap.child("name").val(), 
                 snap.child("description").val(), 
-                '  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'"><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a>'];
-                table_services.rows.add([dataSet]).draw();
+                '  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-name="'+snap.child("name").val()+'" data-description="'+snap.child("description").val()+'"><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a>'];
+                table_services.rows.add([dataSet]).draw().nodes().to$()
+                .each(function() {
+                    $(this).attr('id', snap.key);
+                });;
         })
 
 
         rootRef.on("child_changed", snap => {
-            table_services.ajax.reload();
+          $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("name").val()+'</td><td>'+snap.child("description").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'"><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a></td>');
         })
 
         rootRef.on("child_removed", snap => {
-            table_services.ajax.reload();
+          $("#"+ snap.key).remove();
         })
 
         //show modal on click
         $('#service_btn').on('click',function(){
+           $('#services_form')[0].reset();
+           $('#type').val('add');
            $('#service_modal').modal('show');
            $('.modal-title').text('Add Service')
         })
@@ -47,6 +56,12 @@
             $('.modal-title').text('Update Service')  
 
             var key = $(this).data('key');
+            var name = $(this).data('name');
+            var description = $(this).data('description');
+            
+            $("input[name=name]").val(name)
+            $("#description").val(description)
+
             $('#key').val(key);
             $('#type').val('update');
             $('#service_modal').modal('show');
