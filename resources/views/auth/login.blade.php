@@ -20,7 +20,9 @@
 
 <div class="login-box">
         <div class="login-logo">
-          <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="{{url('')}}">
+          <img src="{{url('vendor/node_modules/new_front_template/images/logo.png')}}" width="150" height="150"/>
+        </a>
         </div>
         <div class="login-box-body">
           <p class="login-box-msg">Sign in to start your session</p>
@@ -55,12 +57,7 @@
               </div>
             </div>
           </form>
-          {{-- @if (Route::has('password.request'))
-            <a class="text-center" href="{{ route('password.request') }}">
-                {{ __('Forgot Your Password?') }}
-            </a><br>
-          @endif --}}
-          {{-- <a href="{{url('register')}}" class="text-center">Register a new membership</a> --}}
+      
         </div>
 </div>
 @endsection

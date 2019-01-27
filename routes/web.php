@@ -22,4 +22,12 @@ Route::get('/admin/pets', 'AdminController@petList');
 
 Route::get('/admin/services', 'AdminController@serviceList');
 
+Route::get('/admin/doctors', 'DoctorController@index');
+Route::get('/admin/doctor/schedule/{id}', 'DoctorController@schedules');
+Route::post('/admin/doctor/schedule/add', 'DoctorController@saveSchedules');
+Route::post('/admin/doctor/schedule/edit', 'DoctorController@editSchedules');
+Route::post('/admin/doctor/schedule/change', 'DoctorController@changDate');
+
+Route::get('/admin/appointments', 'AppointmentController@index');
+
 Auth::routes();

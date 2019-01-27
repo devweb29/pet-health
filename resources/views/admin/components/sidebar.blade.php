@@ -18,8 +18,8 @@
         <li><a href="{{url('admin/dashboard')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
         <li><a href="{{url('admin/owners')}}"><i class="fa fa-group "></i> <span>Pet Owners Information</span></a></li>
         <li><a href="{{url('admin/pets')}}"><i class="fa  fa-info-circle"></i> <span>Pet Information</span></a></li>
-        <li><a href="#"><i class="fa fa-user-md"></i> <span>Doctors Schedule</span></a></li>
-        <li><a href="#"><i class="fa fa-hand-o-up"></i> <span>Appointment Requests</span></a></li>
+        <li><a href="{{url('admin/doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a></li>
+        <li><a href="{{url('admin/appointments')}}"><i class="fa fa-hand-o-up"></i> <span>Appointments</span></a></li>
         <li><a href="#"><i class="fa fa-hospital-o"></i> <span>Medical History/Reports</span></a></li>
         <li><a href="#"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
         <li><a href="{{url('admin/services')}}"><i class="fa fa-book"></i> <span>Services</span></a></li>

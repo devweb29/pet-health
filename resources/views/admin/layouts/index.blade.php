@@ -26,16 +26,16 @@
 <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-database.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDxwrbKeh9OVuo3gwPcNkXXy8jLLn2KLuU",
-    authDomain: "pethealthmonitoring.firebaseapp.com",
-    databaseURL: "https://pethealthmonitoring.firebaseio.com",
-    projectId: "pethealthmonitoring",
-    storageBucket: "pethealthmonitoring.appspot.com",
-    messagingSenderId: "337014160182"
-  };
-  firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBPSYOJF5qP6JJj_AFuUj-eSe8M6A165mQ",
+      authDomain: "animal-shelter-e79e1.firebaseapp.com",
+      databaseURL: "https://animal-shelter-e79e1.firebaseio.com",
+      projectId: "animal-shelter-e79e1",
+      storageBucket: "animal-shelter-e79e1.appspot.com",
+      messagingSenderId: "114075199276"
+    };
+    firebase.initializeApp(config);
 </script>
 <script>
     $(document).ready(function(){
@@ -58,7 +58,7 @@
 @endsection
 
 @section('layout')
-
+<input type="hidden" id="base_url" value="{{url('')}}">
 <div class="wrapper">
     @include('admin.components.header')
 
