@@ -31,17 +31,17 @@
                 table_services.rows.add([dataSet]).draw().nodes().to$()
                 .each(function() {
                     $(this).attr('id', snap.key);
-                });;
-        })
+                });
+        });
 
 
         rootRef.on("child_changed", snap => {
           $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("name").val()+'</td><td>'+snap.child("description").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'"><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a></td>');
-        })
+        });
 
         rootRef.on("child_removed", snap => {
           $("#"+ snap.key).remove();
-        })
+        });
 
         //show modal on click
         $('#service_btn').on('click',function(){
@@ -66,7 +66,7 @@
             $('#type').val('update');
             $('#service_modal').modal('show');
 
-        })
+        });
 
         $('body').delegate('.btn-delete','click',function(){
             var key = $(this).data('key');
@@ -83,7 +83,7 @@
                     removeFirebase(key,path)
                 }
             });
-        })
+        });
 
         $('#save_service').on('click',function(){
 

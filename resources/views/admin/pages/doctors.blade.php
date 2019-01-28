@@ -39,6 +39,7 @@
                 table_doctors.rows.add([dataSet]).draw().nodes().to$()
                 .each(function() {
                     $(this).attr('id', snap.key);
+                    $(this).attr('class', 'cancelled_row');
                 });;
         })
 

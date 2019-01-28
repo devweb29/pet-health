@@ -3,6 +3,7 @@
 @section('styles')
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">
 <link rel="stylesheet" href="{{url('vendor/node_modules/bootstrap/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url('vendor/node_modules/bootstrap/bootstrap-datepicker.min.css')}}">
 <link rel="stylesheet" href="{{url('vendor/node_modules/datatables/dataTables.bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{url('vendor/node_modules/template/app.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -19,6 +20,7 @@
 <script src="{{url('vendor/node_modules/bootstrap/bootstrap.min.js')}}"></script>
 <script src="{{url('vendor/node_modules/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{url('vendor/node_modules/datatables/dataTables.bootstrap.min.js')}}"></script>
+<script src="{{url('vendor/node_modules/bootstrap/bootstrap-datepicker.min.js')}}"></script>
 <script src="{{url('vendor/node_modules/template/app.js')}}"></script>
 <script src="{{url('vendor/node_modules/jquery/jquery.slimscroll.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
@@ -53,6 +55,27 @@
     }
     function removeFirebase(key,path){
         firebase.database().ref('/'+path+'/'+ key).remove()
+    }
+
+    function notificationFirebase(user_id,param_notif_list,param_user_notif, param_notif_count){
+
+        var rootRef = firebase.database().ref();
+
+        //notification list
+        var fireBaseRefNotificationList = rootRef.child('Notification_list');
+        var newFireBaseRefNotificationList = fireBaseRefNotificationList.push();
+        newFireBaseRefNotificationList.set(param_notif_list);
+
+        var NotifListId = newFireBaseRefNotificationList.getKey();
+
+        //user notification
+        firebase.database().ref().child('/User_notification/'+ user_id + '/' + NotifListId )
+            .update(param_user_notif);
+
+        //notifications count
+        firebase.database().ref().child('/Notifications/'+ user_id )
+            .update(param_notif_count);
+
     }
 </script>
 @endsection
