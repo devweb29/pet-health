@@ -1,4 +1,4 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2018 <a href="{{url('')}}">RAProd</a>.</strong> All rights
+    <strong>Copyright &copy; 2019 <a href="{{url('')}}">PV Pet Shelter</a>.</strong> All rights
     reserved.
 </footer>

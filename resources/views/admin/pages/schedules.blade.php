@@ -58,6 +58,8 @@
                 ],
                 dayClick: function(date, jsEvent, view) {
 
+                    $('#schedule_form')[0].reset();
+
                     var date_selected = date.format();
 
                     $('#start').val(date_selected);

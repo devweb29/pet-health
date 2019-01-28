@@ -37,7 +37,6 @@ class DoctorController extends Controller
     public function saveSchedules(Request $request)
     {
 
-
         $schedule = new Schedule();
         $schedule->doctor_key = $request->doctor_key;
         $schedule->title = $request->title;

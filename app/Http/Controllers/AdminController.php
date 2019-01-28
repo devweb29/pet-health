@@ -40,4 +40,8 @@ class AdminController extends Controller
         return view('admin.pages.services');
     }
 
+    public function medicationList(){
+        return view('admin.pages.medications');
+    }
+
 }

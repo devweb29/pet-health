@@ -7,8 +7,17 @@
           <img src="https://adminlte.io/themes/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>{{ Auth::user()->name }}</p>
+          <?php
+              if(Auth::user()->user_type == 1){
+                $user_type = "Owner";
+              }else if(Auth::user()->user_type == 2){
+                $user_type = "Doctor";
+              }else{
+                $user_type = "Staff";
+              }
+          ?>
+          <a href="#"><i class="fa fa-circle text-success"></i>{{$user_type}}</a>
         </div>
       </div>
       <!-- /.search form -->
@@ -20,12 +29,12 @@
         <li><a href="{{url('admin/pets')}}"><i class="fa  fa-info-circle"></i> <span>Pet Information</span></a></li>
         <li><a href="{{url('admin/doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a></li>
         <li><a href="{{url('admin/appointments')}}"><i class="fa fa-hand-o-up"></i> <span>Appointments</span></a></li>
-        <li><a href="#"><i class="fa fa-hospital-o"></i> <span>Medical History/Reports</span></a></li>
+        <li><a href="{{url('admin/medications')}}"><i class="fa fa-hospital-o"></i> <span>Medical History/Reports</span></a></li>
         <li><a href="#"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
         <li><a href="{{url('admin/services')}}"><i class="fa fa-book"></i> <span>Services</span></a></li>
         <li class="header">Settings</li>
-        <li><a href="#"><i class="fa fa-user"></i> <span>Accounts</span></a></li>
-        <li><a href="#"><i class="fa fa-power-off text-red"></i> <span>Logout</span></a></li>
+        <li><a href="{{url('admin/accounts')}}"><i class="fa fa-user"></i> <span>Accounts</span></a></li>
+        <li><a href="javascript:void(0);"><i class="fa fa-power-off text-red"></i> <span>Logout</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
