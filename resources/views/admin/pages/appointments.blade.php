@@ -478,7 +478,7 @@
 @endpush
 
 @section('title')
-
+Appointments
 @endsection
 
 @section('content')

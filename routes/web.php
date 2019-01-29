@@ -38,5 +38,6 @@ Route::post('/admin/account/add', 'UserController@save');
 Route::post('/admin/account/update', 'UserController@update');
 Route::post('/admin/account/delete', 'UserController@delete');
 
+Route::get('/admin/notifications', 'NotificationController@index');
 
 Auth::routes();

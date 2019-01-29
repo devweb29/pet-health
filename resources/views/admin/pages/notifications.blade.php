@@ -178,128 +178,52 @@
 @endpush
 
 @section('title')
-Accounts
+Notifications
 @endsection
 
 @section('content')
 
     <section class="content-header">
         <h1>
-            Accounts Information
-            <small>list of account</small>
+            Notifications Information
+            <small>list of notiifcation</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{url('admin/dashboard')}}"><i class="fa fa-dashboard"></i>Home</a></li>
-            <li class="active">Accounts</li>
+            <li class="active">Notifications</li>
         </ol>
     </section>
 
-    <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        @if(Auth::user()->user_type == 1)
-                           <p><button type="button" class="btn btn-block btn-primary" id="account_btn">Add Account</button></p>
-                        @endif
-                        <table id="accounts" class="table table-bordered table-striped">
-                            <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Position</th>
-                                @if(Auth::user()->user_type == 1)
-                                 <th>Action</th>
-                                @endif
-                            </tr>
-                            </thead>
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Notification</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="table-responsive mailbox-messages">
+                        <table class="table table-hover table-striped">
                             <tbody>
-                                @foreach($users as $user)
-                                    <tr>
-                                        <td>{{$user->name}}</td>
-                                        <td>{{$user->email}}</td>
-                                        <td>{{($user->user_type == 2) ? 'Doctor' : 'Staff'}}</td>
-                                        @if(Auth::user()->user_type == 1)
-                                            <td>
-                                                <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-user_id="{{$user->id}}" data-name="{{$user->name}}" data-email="{{$user->email}}" data-user_type="{{$user->user_type}}"><i class="fa fa-pencil"></i></a>
-                                                <a class="btn btn-xs btn-social-icon btn-google btn-delete" data-user_id="{{$user->id}}"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        @endif
-                                    </tr>
-                                @endforeach
+                            <tr>
+                                <td><div class="icheckbox_flat-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div></td>
+                                <td class="mailbox-name"><a href="read-mail.html">John Doe</a></td>
+                                <td class="mailbox-subject"><b>Appointment</b> - John Doe set an appointment for tootshie on 12/12/2019
+                                </td>
+                              {{--  <td class="mailbox-attachment"></td>
+                                <td class="mailbox-date">5 mins ago</td>--}}
+                            </tr>
                             </tbody>
                         </table>
+                        <!-- /.table -->
                     </div>
-                    <!-- /.box-body -->
+                    <!-- /.mail-box-messages -->
                 </div>
-                <!-- /.box -->
             </div>
-            <!-- /.col -->
         </div>
-        <!-- /.row -->
+    </div>
     </section>
 
-    <div class="modal fade" id="account_modal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Add Account</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="box box-primary">
-                            <!-- form start -->
-                            <form role="form" id="account_form">
-                                <div class="box-body">
-                                    <input type="hidden" id="type">
-                                    <input type="hidden" id="user_id">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Account Type</label>
-                                        <select class="form-control" name="account_type" id="account_type" required>
-                                            <option value="">Select Type</option>
-                                            <option value="2">Doctor</option>
-                                            <option value="3">Staff</option>
-                                        </select>
-                                    </div>
 
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="name" placeholder="Enter Name" required="true">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" name="email" placeholder="Enter Email" required="true">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="password">Password</label>
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" required="true">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="confirm_password">Confirm Password</label>
-                                        <input type="password" class="form-control" name="confirm_password" placeholder="Enter Confirm Password" required="true">
-                                    </div>
-
-                                </div>
-                                <!-- /.box-body -->
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="save_account">Save changes</button>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-
-    <!-- /.modal -->
 @endsection

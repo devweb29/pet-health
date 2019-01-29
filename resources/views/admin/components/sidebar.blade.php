@@ -30,11 +30,20 @@
         <li><a href="{{url('admin/doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a></li>
         <li><a href="{{url('admin/appointments')}}"><i class="fa fa-hand-o-up"></i> <span>Appointments</span></a></li>
         <li><a href="{{url('admin/medications')}}"><i class="fa fa-hospital-o"></i> <span>Medical History/Reports</span></a></li>
-        <li><a href="#"><i class="fa fa-bell"></i> <span>Notifications</span></a></li>
+        <li><a href="{{url('admin/notifications')}}">
+            <i class="fa fa-bell"></i>
+            <span>Notifications</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-red">12</small>
+            </span>
+          </a></li>
         <li><a href="{{url('admin/services')}}"><i class="fa fa-book"></i> <span>Services</span></a></li>
         <li class="header">Settings</li>
         <li><a href="{{url('admin/accounts')}}"><i class="fa fa-user"></i> <span>Accounts</span></a></li>
-        <li><a href="javascript:void(0);"><i class="fa fa-power-off text-red"></i> <span>Logout</span></a></li>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          {{ csrf_field() }}
+        </form>
+        <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-power-off text-red"></i> <span>Logout</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

@@ -10,7 +10,7 @@
 @endpush
 
 @section('title')
-
+Dashboard
 @endsection
 
 @section('content')

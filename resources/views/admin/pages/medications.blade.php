@@ -199,7 +199,7 @@
 @endpush
 
 @section('title')
-
+Medical History / Reports Information
 @endsection
 
 @section('content')

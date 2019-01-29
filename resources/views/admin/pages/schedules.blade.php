@@ -155,7 +155,7 @@
 @endpush
 
 @section('title')
-
+Schedules
 @endsection
 
 @section('content')

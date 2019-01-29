@@ -10,7 +10,7 @@
 @endpush
 
 @section('title')
-
+Home
 @endsection
 
 @section('content')

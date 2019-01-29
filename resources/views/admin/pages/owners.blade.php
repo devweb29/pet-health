@@ -102,7 +102,7 @@
 @endpush
 
 @section('title')
-
+Owners
 @endsection
 
 @section('content')

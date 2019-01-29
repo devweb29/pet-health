@@ -9,7 +9,7 @@
     <base href="/">
     @stack('metas')
 
-    <title>  - @yield('title')</title>
+    <title>Animal Shelter Veterinary Clinic - @yield('title')</title>
     @yield('styles')@stack('styles')
     @yield('scripts')@stack('scripts')
     

@@ -150,7 +150,7 @@
 @endpush
 
 @section('title')
-
+Doctors
 @endsection
 
 @section('content')

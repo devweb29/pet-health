@@ -36,7 +36,7 @@
 
 
         rootRef.on("child_changed", snap => {
-          $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("name").val()+'</td><td>'+snap.child("description").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'"><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a></td>');
+          $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("name").val()+'</td><td>'+snap.child("description").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-name="'+snap.child("name").val()+'" data-description="'+snap.child("description").val()+'" ><i class="fa fa-pencil"></i></a><a class="btn btn-xs btn-social-icon btn-google btn-delete" data-key="'+snap.key+'"><i class="fa fa-trash-o"></i></a></td>');
         });
 
         rootRef.on("child_removed", snap => {
@@ -128,7 +128,7 @@
 @endpush
 
 @section('title')
-
+Services
 @endsection
 
 @section('content')
@@ -151,13 +151,17 @@
         <div class="box">
           <!-- /.box-header -->
           <div class="box-body">
-            <p><button type="button" class="btn btn-block btn-primary" id="service_btn">Add Service</button></p>    
+            @if(Auth::user()->user_type == 1)
+                <p><button type="button" class="btn btn-block btn-primary" id="service_btn">Add Service</button></p>
+            @endif
             <table id="services" class="table table-bordered table-striped">
               <thead>
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
-                    <th>Action</th>
+                    @if(Auth::user()->user_type == 1)
+                        <th>Action</th>
+                    @endif
                 </tr>
               </thead>
               <tbody>

@@ -143,7 +143,7 @@
 @endpush
 
 @section('title')
-
+Pets
 @endsection
 
 @section('content')
