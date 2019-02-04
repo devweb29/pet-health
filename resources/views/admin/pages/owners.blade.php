@@ -29,7 +29,7 @@
                 snap.child("firstName").val(), 
                 snap.child("lastName").val(), 
                 snap.child("userEmail").val(), 
-                '<a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-fname="'+snap.child("firstName").val()+'" data-lname="'+snap.child("lastName").val()+'" data-email="'+snap.child("userEmail").val()+'"><i class="fa fa-pencil"></i></a>'];
+                '<a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-fname="'+snap.child("firstName").val()+'" data-lname="'+snap.child("lastName").val()+'" data-email="'+snap.child("userEmail").val()+'" data-phone="'+snap.child("userPhone").val()+'"><i class="fa fa-pencil"></i></a>'];
                 table_services.rows.add([dataSet]).draw().nodes().to$()
                 .each(function() {
                     $(this).attr('id', snap.key);
@@ -38,7 +38,7 @@
 
 
         rootRef.on("child_changed", snap => {
-          $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("firstName").val()+'</td><td>'+snap.child("lastName").val()+'</td><td>'+snap.child("userEmail").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-fname="'+snap.child("firstName").val()+'" data-lname="'+snap.child("lastName").val()+'" data-email="'+snap.child("userEmail").val()+'"><i class="fa fa-pencil"></i></a>');
+          $("#"+ snap.key).html('<td class="sorting_1">'+snap.child("firstName").val()+'</td><td>'+snap.child("lastName").val()+'</td><td>'+snap.child("userEmail").val()+'</td><td>  <a class="btn btn-xs btn-social-icon btn-dropbox btn-update" data-key="'+snap.key+'" data-fname="'+snap.child("firstName").val()+'" data-lname="'+snap.child("lastName").val()+'" data-email="'+snap.child("userEmail").val()+'" data-phone="'+snap.child("userPhone").val()+'"><i class="fa fa-pencil"></i></a>');
         })
 
 
@@ -50,11 +50,13 @@
             var fname = $(this).data('fname');
             var lname = $(this).data('lname');
             var email = $(this).data('email');
-            
+            var phone = $(this).data('phone');
+
             $("input[name=fname]").val(fname)
             $("input[name=lname]").val(lname)
             $("input[name=email]").val(email)
-          
+            $("input[name=phone]").val(phone)
+
             $('#key').val(key);
             $('#type').val('update');
             $('#pet_owner_modal').modal('show');
@@ -69,8 +71,9 @@
                 var params = {
                   firstName: $("input[name=fname]").val(),
                   lastName: $("input[name=lname]").val(),
-                  userEmail: $("input[name=email]").val()
-                };    
+                  userEmail: $("input[name=email]").val(),
+                  userPhone: $("input[name=phone]").val()
+                };
 
                 var path = 'Users';
                 var text = '';
@@ -172,6 +175,10 @@ Owners
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Last Name</label>
                                     <input type="text" class="form-control" name="lname" placeholder="Enter Last Name" required="true">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="exampleInputEmail1">Phone</label>
+                                        <input type="text" class="form-control" name="phone" placeholder="Enter Phone" required="true">
                                   </div>
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>

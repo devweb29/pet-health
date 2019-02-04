@@ -22,9 +22,9 @@ Home
 			<div class="w3-agileits-about-grids">
 				<div class="col-md-6 agile-about-left">
 					<h2 class="agileits-title">save a pet</h2>
-					<h5>VetCare is proud to serve the USA for everything pet related. Our veterinary clinic network and animal hospital is run by our experienced veterinarian, Practice Owner Dr. Brandon Rivera.</h5>
+					<h5>PV Animal Shelter is proud to serve the Philippines for everything pet related. Our veterinary clinic network and animal hospital is run by our experienced veterinarian.</h5>
 					<p>We're committed to giving your pets extraordinary care whenever and wherever they need it. Partner with one of our veterinarians today to begin proactively monitoring the health and wellness of the pets you love.</p>
-					<p>VetCare stays on top of the latest advances in veterinarian technology and above all, remembers that all animals and pets need to be treated with loving care.</p>
+					<p>PV Animal Shelter stays on top of the latest advances in veterinarian technology and above all, remembers that all animals and pets need to be treated with loving care.</p>
 				</div>
 				<div class="col-md-6 agile-about-right"></div>
 				<div class="clearfix"> </div>
@@ -40,7 +40,7 @@ Home
 		<div class="col-md-9 w3_agileits-adopt-right">
 			<h3 class="w3stitle">A shelter pet wants to meet you</h3> 
 			<p>save a life. adopt a shelter pet.</p>
-			<img src="{{url('vendor/node_modules/new_front_template/images/puppy.png')}}" class="img-responsive" alt=""/>
+			<img src="{{url('vendor/node_modules/new_front_template/images/cat-nobg.png')}}" class="img-responsive" alt=""/>
 		</div>
 		<div class="clearfix"></div>
 	</div>	
@@ -244,14 +244,11 @@ Home
 								
 							</div>	
 							<div class="col-md-7 client-text">
-								<h3>kristian -</h3>
-								<h4>"Pets have more love and compassion in them than most humans.</h4>
-								<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione ratione voluptate.</p>
+								<h3>Iileen -</h3>
+								<h4>"Have a friendly vet with a heart.</h4>
 								<ul class="social-icons3">
-									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-									<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									<li><a href="https://www.facebook.com/pages/Animal-Shelter-Veterinary-Clinic-Taguig-Branch/767435229945215" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="https://www.google.com/search?rlz=1C1CHZL_enPH831PH831&ei=S4dXXN2CCIKuvwSO4JXwDw&q=pv+animal+shelter+taguig&oq=pv+ani&gs_l=psy-ab.3.0.35i39l2j0i203l8.2216.3425..4932...0.0..0.213.1057.0j5j1......0....1..gws-wiz.......0i71j0j0i131j0i67j0i10.DLgfgI5jbQc" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								</ul>
 
 							</div>
@@ -262,15 +259,11 @@ Home
 								
 							</div>	
 							<div class="col-md-7 client-text">
-								<h3>Federica -</h3>
-								<h4>"Money can buy you a dog, but only love can make him wag his tail.</h4>
-								<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione v magni dolores eoqus ratione voluptate.</p>
+								<h3>氷 アフロイロ -</h3>
+								<h4>"Upgraded Clinic. Was able to get the results in a few minutes. VETS are very approachable and open. Most of all you have a peace of mind when you walk out, knowing your furbaby is safe.</h4>
 								<ul class="social-icons3">
-									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-									<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
-
+									<li><a href="https://www.facebook.com/pages/Animal-Shelter-Veterinary-Clinic-Taguig-Branch/767435229945215" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="https://www.google.com/search?rlz=1C1CHZL_enPH831PH831&ei=S4dXXN2CCIKuvwSO4JXwDw&q=pv+animal+shelter+taguig&oq=pv+ani&gs_l=psy-ab.3.0.35i39l2j0i203l8.2216.3425..4932...0.0..0.213.1057.0j5j1......0....1..gws-wiz.......0i71j0j0i131j0i67j0i10.DLgfgI5jbQc" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								</ul>
 							</div>
 							<div class="clearfix"></div>
@@ -280,16 +273,11 @@ Home
 								
 							</div>	
 							<div class="col-md-7 client-text">
-								<h3>bianca -</h3>
-								<h4>"Pets have more love and compassion in them than most humans</h4>
-								<p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magniauts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione v dolores eoqus ratione voluptate.</p>
-								
+								<h3>Roselle -</h3>
+								<h4>"Thanks a lot for taking care of our cookie. very accommodating docs especiallly dra. Salvo as well as all the staff. Very much deserving for a 5 star rating.</h4>
 								<ul class="social-icons3">
-									<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-									<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-									<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-									<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
-
+									<li><a href="https://www.facebook.com/pages/Animal-Shelter-Veterinary-Clinic-Taguig-Branch/767435229945215" class="fa fa-facebook icon-border facebook"> </a></li>
+									<li><a href="https://www.google.com/search?rlz=1C1CHZL_enPH831PH831&ei=S4dXXN2CCIKuvwSO4JXwDw&q=pv+animal+shelter+taguig&oq=pv+ani&gs_l=psy-ab.3.0.35i39l2j0i203l8.2216.3425..4932...0.0..0.213.1057.0j5j1......0....1..gws-wiz.......0i71j0j0i131j0i67j0i10.DLgfgI5jbQc" class="fa fa-google-plus icon-border googleplus"> </a></li>
 								</ul>
 
 							</div>

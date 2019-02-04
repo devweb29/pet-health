@@ -1,28 +1,7 @@
 <div id="contact" class="wthree-contact w3ls-section">
     <div class="container">
-        <h3 class="agileits-title">contact</h3>  
-            <div class="col-md-6 col-sm-6 agileinfo-contact-left">	
-                <h6>send us a mail!</h6>
-                <form action="#" class="form_w3layouts" method="post">
-                    <div class="agileits-form-element">
-                        <span class="col-md-3  col-sm-3 col-xs-3 label1">name</span>
-                        <input type="text" class="col-md-9 col-sm-9 col-xs-9" name="name" required="">
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="agileits-form-element">
-                        <span class="col-md-3 col-sm-3 col-xs-3 label1">Email</span>
-                        <input type="email" name="name" class="col-md-9 col-sm-9 col-xs-9 email" required="">
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="agileits-form-element">
-                        <span class="col-md-3 col-sm-3 col-xs-3  label1">Message</span>
-                        <textarea class="col-md-9 col-sm-9 col-xs-9" required></textarea>
-                        <div class="clearfix"></div>
-                    </div>
-                    <input type="submit" value="send">
-                </form>	
-            </div>	
-            <div class="col-md-6 col-sm-6 col-xs-12 contact-w3lsright">
+        <h3 class="agileits-title">contact</h3>
+            <div class="col-md-12 col-sm-12 col-xs-12 contact-w3lsright">
                 <h6>get in touch</h6>
                 <div class="address-row">
                     <div class="col-xs-2 address-left">
@@ -30,7 +9,7 @@
                     </div>
                     <div class="col-xs-10 address-right">
                         <h5>Visit Us</h5>
-                        <p>Bmr St, Canada, New York, USA</p>
+                        <p>7D Gen. Luna St, Taguig 1632 Metro Manila</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -40,7 +19,7 @@
                     </div>
                     <div class="col-xs-10 address-right">
                         <h5>Mail Us</h5>
-                        <p><a href="mailto:info@example.com"> mail@example.com</a></p>
+                        <p><a href="mailto:info@example.com">pvanimalshelter@gmail.com</a></p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -50,14 +29,13 @@
                     </div>
                     <div class="col-xs-10 address-right">
                         <h5>Call Us</h5>
-                        <p>+01 222 333 4444</p>
+                        <p>(02) 628 1611</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>  
                 <!-- map -->
                 <div class="map agileits">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.948805392833!2d-73.99619098458929!3d40.71914347933105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1479793484055"></iframe>
-                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.199709555338!2d121.06741931528329!3d14.530566282683589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8a315101e97%3A0x643d688f77a9bde7!2sP.V.+Animal+Shelter+Veterinary+Clinic!5e0!3m2!1sfil!2sph!4v1549240018235" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                </div>
                 <!-- //map --> 
             </div>
             <div class="clearfix"> </div>
@@ -68,13 +46,11 @@
     <div class="container"> 
         <div class="w3social-icons footer-w3icons"> 
             <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="https://www.facebook.com/pages/Animal-Shelter-Veterinary-Clinic-Taguig-Branch/767435229945215"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHZL_enPH831PH831&ei=S4dXXN2CCIKuvwSO4JXwDw&q=pv+animal+shelter+taguig&oq=pv+ani&gs_l=psy-ab.3.0.35i39l2j0i203l8.2216.3425..4932...0.0..0.213.1057.0j5j1......0....1..gws-wiz.......0i71j0j0i131j0i67j0i10.DLgfgI5jbQc"><i class="fa fa-google-plus"></i></a></li>
             </ul>
         </div>
-        <p>© 2017 Pet Shelter. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+        <p>© 2019 PV Animal Shelter Veterinary Clinic. All Rights Reserved</p>
     </div>
 </div>
 <!-- //copy right end here --> 

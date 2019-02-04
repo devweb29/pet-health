@@ -21,11 +21,11 @@
 <div class="login-box">
         <div class="login-logo">
         <a href="{{url('')}}">
-          <img src="{{url('vendor/node_modules/new_front_template/images/logo.png')}}" width="150" height="150"/>
+
         </a>
         </div>
         <div class="login-box-body">
-          <p class="login-box-msg">Sign in to start your session</p>
+          <p class="login-box-msg">Animal Shelter Veterinary Clinic</p>
           <form method="POST" action="{{ route('login') }}">
 
             @csrf
@@ -50,10 +50,8 @@
               @endif
             </div>
             <div class="row">
-              <div class="col-xs-8">
-              </div>
-              <div class="col-xs-4">
-                <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+              <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block btn-flat" style="background:#e7470c;border:none">Sign In</button>
               </div>
             </div>
           </form>

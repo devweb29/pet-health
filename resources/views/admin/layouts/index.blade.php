@@ -42,7 +42,7 @@
 <script>
     $(document).ready(function(){
         $('body').addClass('fixed sidebar-mini skin-red-light')
-    })
+    });
     function addFirebase(path,params){
         var rootRef = firebase.database().ref();
         var fireBaseRef = rootRef.child(path);
@@ -77,6 +77,27 @@
             .update(param_notif_count);
 
     }
+
+    function setUnavailableFirebase(params){
+        var rootRef = firebase.database().ref();
+        var fireBaseRef = rootRef.child("UnavailableDateTime");
+        var newFireBaseRef = fireBaseRef.push();
+        newFireBaseRef.set(params);
+    }
+
+    function removeUnavailableFirebase(appointment_key){
+
+        var ref = firebase.database();
+        ref.orderByChild('UnavailableDateTime').equalTo(appointment_key)
+            .once('value').then(function(snapshot) {
+            snapshot.forEach(function(childSnapshot) {
+                ref.child(childSnapshot.key).remove();
+            });
+        });
+
+    }
+
+
 </script>
 @endsection
 
